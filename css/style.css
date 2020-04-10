@@ -15,7 +15,6 @@
    text-align: center;
    position: relative;
    padding: 0px 0px 10px 0px;
-
 }
 
 body {
@@ -139,6 +138,7 @@ li {
 /* section about me */
 .about {
    background: #3a3a3a;
+   padding-top: 60px;
 }
 
 /* выровнять по центру */
@@ -207,13 +207,22 @@ li {
    padding: 45px 0px 30px 0px;
 }
 
+.about__tech-skills span,
+.about__soft-skills span {
+   text-align: center;
+}
+
+.about__soft-skills {
+   padding: 30px 0px 10px 0px;
+}
+
 .about__tech-skills li,
 .about__soft-skills li {
    list-style: none;
-   margin: 20px 0;
+   margin: 15px 0;
    display: block;
    width: 500px;
-   margin: 30px auto;
+   margin: 20px auto;
    color: #a0a0a0;
 }
 
@@ -322,6 +331,7 @@ li {
 .experience {
    background: #252525;
    color: #939393;
+   padding-top: 60px;
 }
 
 .experience__block-inner {
@@ -340,7 +350,8 @@ li {
    margin: 0px 0px 50px 0px;
 }
 
-.experience__block-info {}
+.experience__block-info {
+}
 
 .experience__block-info a {
    color: #fff;
@@ -348,7 +359,8 @@ li {
    font-size: 18px;
 }
 
-.experience__block-info span {}
+.experience__block-info span {
+}
 
 .experience__block-text {
    width: 600px;
@@ -377,40 +389,61 @@ li {
 /* portfolio style */
 .portfolio {
    background: #3a3a3a;
+   padding-top: 60px;
 }
 
-.portfolio .portfolio__filter {}
-
-/* my service styles */
-.service {
-   background: #252525;
-   height: 400px;
-   color: #a0a0a0;
+.portfolio-block__title {
+   padding: 10px 0px 5px 0px;
+   color: #fff;
+   text-align: center;
+   font-size: 16px;
 }
-
-.service__title {
-   padding-top: 30px;
-}
-
-.service__rows {
+.portfolio__filter ul {
    display: flex;
-   flex-wrap: wrap;
+   justify-content: center;
+   padding: 30px 0px 0px 0px;
+}
+
+.portfolio__filter ul a {
+   color: #939393;
+}
+.portfolio__filter ul li a.active {
+   color: #fff;
+}
+
+.portfolio-block {
+   display: flex;
+   padding: 20px 0px 60px 0px;
+}
+
+.portfolio-block__items {
+   flex: 0 1 33.33%;
+   padding: 15px;
+   align-items: center;
    text-align: center;
 }
 
-.service__item {
-   flex: 0 1 50%;
-   margin: 30px 0px;
+.portfolio-block__image img {
+   height: 200px;
+   width: 260px;
 }
 
-.service__item-icon {}
-
-.service__item-title {
-   font-size: 20px;
+.portfolio-block__title h3 {
+   color: #939393;
+   font-size: 16px;
+   font-weight: 600;
+}
+.portfolio-block__title h3:hover {
+   color: #fff;
+   transition: all 0.3s;
 }
 
-.service__item-text {
-   padding: 20px 30px;
+.portfolio-block__title {
+   padding: 30px 0px 30px 0px;
+}
+
+.portfolio-block__text {
+   color: #a0a0a0;
 }
 
 /* slider styles */
@@ -447,16 +480,18 @@ li {
 
 /* references style */
 .slider-ref {
-   background: #3a3a3a;
-   height: 400px;
+   background: #252525;
    text-align: center;
+   padding-top: 60px;
 }
 
 .slider__title {
    padding-top: 50px;
 }
 
-.slider__inner {}
+.slider__inner {
+   padding: 0px 0px 60px 0px;
+}
 
 .slider__item {
    color: #fff;
@@ -465,21 +500,25 @@ li {
 
 .slider__item-text {
    margin: 60px 0px 30px 0px;
+   color: #d6d5d5;
 }
 
-.slider__item-author {}
+.slider__item-author h5 {
+   font-size: 18px;
+   color: #939393;
+   font-weight: 600;
+}
 
 .slider__item-position {
    margin: 5px 0px 30px 0px;
+   color: #939393;
 }
 
 /* contact form style */
 .contact {
-   background: #252525;
-}
-
-.contanct__title {
-   padding: 30px 0px 0px 0px;
+   background: #3a3a3a;
+   padding-top: 60px;
+   height: 630px;
 }
 
 .contact__rows {
@@ -494,89 +533,43 @@ li {
 }
 
 .contact__row input {
-   padding: 20px 400px 10px 10px;
+   padding: 15px 380px 15px 10px;
+   font-size: 14px;
+   border-radius: 10px;
 }
 
-.contact__row-right {}
+.contact__row-right {
+}
 
-.contact__row-left {}
+.contact__row-left {
+}
 
 .contact__message {
    height: 200px;
    width: 100%;
 }
 
-.contact__btn {
-   padding: 30px 0px;
+.contact__message textarea {
+   font-size: 14px;
+   padding: 15px 0px 0px 10px;
+   border-radius: 10px;
 }
 
-/* footer style */
-.footer {}
-
-.footer__content {
-   background: #3a3a3a;
-   color: #a0a0a0;
-}
-
-.footer__items {
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-   align-items: center;
-   height: 180px;
-}
-
-.footer__item p {
+.contact__btn button {
+   display: inline-block;
+   line-height: 44px;
+   border-radius: 10px;
+   height: 44px;
+   padding: 0px 20px;
+   float: right;
+   margin: 50px 0px;
+   background-color: #fff;
    font-size: 16px;
 }
 
-.footer__item h6 {
-   font-size: 18px;
-   font-weight: 600;
-   padding: 10px 0px;
-}
-
-.footer__phone {
-   position: relative;
-}
-
-.footer__item .footer__phone::before {
-   content: "\e958";
-   font-family: "icomoon";
-   position: absolute;
-   left: 45%;
-   top: -20px;
-   color: #a0a0a0;
-}
-
-.footer__email {
-   position: relative;
-}
-
-.footer__email::before {
-   content: "\f0e0";
-   font-family: "icomoon";
-   position: absolute;
-   left: 45%;
-   top: -20px;
-   color: #a0a0a0;
-}
-
-.footer__location {
-   position: relative;
-}
-
-.footer__location::before {
-   content: "\e947";
-   font-family: "icomoon";
-   position: absolute;
-   left: 45%;
-   top: -20px;
-   color: #a0a0a0;
-}
-
-.footer__copy {
-   background: #000;
+/* footer style */
+.footer {
+   background: #252525;
    color: #a0a0a0;
    height: 40px;
    text-align: center;

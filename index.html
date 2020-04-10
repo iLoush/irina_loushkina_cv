@@ -97,11 +97,11 @@
                      JavaScript, Git, GitHub, and responsive design. I use the BEM methodology for writing code.
                   </p>
                   <p>
-                     Also, I have experience with interior design and 3D modeling which helps me get more knowlage with
-                     colors, Photoshop and 3D Max.
+                     Also, I have experience with interior design and 3D modeling which helps me get more knowlage about
+                     colors, styles, Photoshop and 3D Max.
                   </p>
                   <p>
-                     You are more than welcome to download my CV for more details below.
+                     For more information you are more than welcome to download my CV below.
                   </p>
                </div>
                <div class="about__download">
@@ -276,14 +276,67 @@
          <div class="portfolio__title title--default">
             <span>Portfolio</span>
          </div>
+
          <div class="portfolio__filter">
             <ul>
-               <li><a href="#">All</a></li>
-               <li><a href="#">Landing page</a></li>
-               <li><a href="#">Website</a></li>
-               <li><a href="#">Portfolio</a></li>
+               <li><a class="active" href="#" data-target="all">All</a></li>
+               <li><a href="#" data-target="landing">Landing page</a></li>
+               <li><a href="#" data-target="website">Website</a></li>
+               <li><a href="#" data-target="portfolio">Portfolio</a></li>
             </ul>
          </div>
+
+         <div class="portfolio-block">
+            <div class="portfolio-block__items" data-id="landing" data-id="landing">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
+                     <img src="img/travel.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
+                     <h3>Travel page (HTML, CSS)</h3>
+                  </a>
+               </div>
+               <div class="portfolio-block__text">
+                  <p>Short web page witn image and style lists with link to another page.</p>
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="website">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/tesla/">
+                     <img src="img/tesla.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <a target="_blank" href="https://iloush.github.io/tesla/">
+                     <h3>Landing page about Tesla (HTML, CSS, jGuery)</h3>
+                  </a>
+               </div>
+               <div class="portfolio-block__text">
+                  Landing page with burger menu, slider, video and main blocks of advantages.
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="website">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/tesla/">
+                     <img src="img/company_website.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <a target="_blank" href="https://iloush.github.io/company_website/">
+                     <h3>First page of company website (HTML, CSS, jGuery)</h3>
+                  </a>
+               </div>
+               <div class="portfolio-block__text">
+                  First page of company website with burger menu, slider, form and main blocks of advantages.
+               </div>
+            </div>
+
+         </div>
+
       </div>
    </section>
 
@@ -301,8 +354,10 @@
                   ducimus? Soluta!
                </div>
                <div class="slider__item-author">
-                  <h5>Ekaterina Volkova</h5>
-                  <p class="slider__item-position">Booking.com Area Manager</p>
+                  <h5>Marina Grabovska</h5>
+                  <p class="slider__item-position">
+                     Booking.com Senior Manager
+                  </p>
                </div>
             </div>
             <div class="slider__item">
@@ -313,8 +368,10 @@
                   ducimus? Soluta!
                </div>
                <div class="slider__item-author">
-                  <h5>Ekaterina Volkova</h5>
-                  <p class="slider__item-position">Booking.com Area Manager</p>
+                  <h5>Olga Kozlenko</h5>
+                  <p class="slider__item-position">
+                     Sales and Client Relationship Director
+                  </p>
                </div>
             </div>
             <div class="slider__item">
@@ -325,8 +382,10 @@
                   ducimus? Soluta!
                </div>
                <div class="slider__item-author">
-                  <h5>Ekaterina Volkova</h5>
-                  <p class="slider__item-position">Booking.com Area Manager</p>
+                  <h5>Iryna Koroleva</h5>
+                  <p class="slider__item-position">
+                     Booking.com Account Executive Manager
+                  </p>
                </div>
             </div>
          </div>
@@ -366,27 +425,7 @@
    </section>
 
    <footer class="footer">
-      <div class="footer__content">
-         <div class="container">
-            <div class="footer__items">
-               <div class="footer__item">
-                  <h6 class="footer__phone">Phone</h6>
-                  <p>+31 (612) 96 30 71</p>
-               </div>
-               <div class="footer__item">
-                  <h6 class="footer__email">Email</h6>
-                  <p>iLoushkina@gmail.com</p>
-               </div>
-               <div class="footer__item">
-                  <h6 class="footer__location">Location</h6>
-                  <p>Hilversum, Netherlands</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="footer__copy">
-         © 2020 All rights reserved
-      </div>
+      © 2020 All rights reserved
    </footer>
 
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
