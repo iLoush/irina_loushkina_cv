@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/fonts.css">
    <script src="https://kit.fontawesome.com/17d0a1f95f.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/media.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -200,7 +201,7 @@
 
    <section id="experience" class="experience">
       <div class="container">
-         <div class="service__title title--default">
+         <div class="experience__title title--default">
             My Experience
          </div>
 
@@ -441,32 +442,34 @@
 
    <section id="contact" class="contact">
       <div class="container">
-         <div class="contanct__title title--default">
+         <div class="contact__title title--default">
             Contact
          </div>
-         <div class="contact__rows">
-            <div class="contact__row-right">
-               <div class="contact__row">
-                  <input type="text" placeholder="Your name:">
+         <div class="contact__wrapper">
+            <div class="contact__rows">
+               <div class="contact__row-right">
+                  <div class="contact__row">
+                     <input type="text" placeholder="Your name:">
+                  </div>
+                  <div class="contact__row">
+                     <input type="tel" placeholder="Phone:">
+                  </div>
                </div>
-               <div class="contact__row">
-                  <input type="tel" placeholder="Phone:">
+               <div class="contact__row-left">
+                  <div class="contact__row">
+                     <input type="email" placeholder="Email:">
+                  </div>
+                  <div class="contact__row">
+                     <input type="text" placeholder="Subject:">
+                  </div>
                </div>
             </div>
-            <div class="contact__row-left">
-               <div class="contact__row">
-                  <input type="email" placeholder="Email:">
-               </div>
-               <div class="contact__row">
-                  <input type="text" placeholder="Subject:">
-               </div>
+            <div class="contact__message">
+               <textarea class="contact__message" name="message" placeholder="Message:"></textarea>
             </div>
-         </div>
-         <div class="contact__message">
-            <textarea class="contact__message" name="message" placeholder="Message:"></textarea>
-         </div>
-         <div class="contact__btn">
-            <button type="submit">Send message</button>
+            <div class="contact__btn">
+               <button type="submit">Send message</button>
+            </div>
          </div>
       </div>
    </section>
