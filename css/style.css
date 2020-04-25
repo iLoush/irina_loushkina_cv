@@ -112,8 +112,9 @@ li {
 }
 
 .content__social-link:hover {
-   border-bottom: 2px solid #d6d5d5;
+   font-size: 36px;
    transition: all 0.3s;
+   color: #fff;
 }
 
 .content__btn {
@@ -155,20 +156,31 @@ li {
 }
 
 .about__items-left {
-   margin: 0px 0px 50px 0px;
+   margin: 0px 0px 30px 0px;
 }
 
 .about__text {
    color: #d6d5d5;
-   width: 500px;
+   width: 640px;
    font-size: 18px;
-   margin: 55px 0px 30px 0px;
-   /* letter-spacing: ;
-   line-height: ; */
+   margin-top: 55px;
 }
 
 .about__text p {
    margin: 30px 0px;
+   letter-spacing: 0.8;
+   line-height: 1.6;
+}
+
+.about__p--link {
+   color: #fff;
+   font-style: italic;
+   font-weight: 700;
+}
+
+.about__p--link:hover {
+   font-size: 20px;
+   transition: all 0.3s;
 }
 
 .about__download {
@@ -200,11 +212,12 @@ li {
    background: #eee;
    color: #fff;
    border: 1px solid #fff;
-   transition: 0.8;
+   transition: all 0.8s;
 }
 
 .about__items-right {
    padding: 45px 0px 30px 0px;
+   width: 380px;
 }
 
 .about__tech-skills span,
@@ -221,9 +234,9 @@ li {
    list-style: none;
    margin: 15px 0;
    display: block;
-   width: 500px;
+   width: 450px;
    margin: 20px auto;
-   color: #a0a0a0;
+   color: #d6d5d5;
 }
 
 .bar {
@@ -257,6 +270,11 @@ li {
    animation: javascript 2s;
 }
 
+.react {
+   width: 30%;
+   animation: javascript 2s;
+}
+
 .jquery {
    width: 70%;
    animation: jquery 2s;
@@ -265,6 +283,16 @@ li {
 .photoshop {
    width: 70%;
    animation: photoshop 2s;
+}
+
+.teamplayer {
+   width: 100%;
+   animation: teamplayer 2s;
+}
+
+.learn {
+   width: 100%;
+   animation: teamplayer 2s;
 }
 
 .english {
@@ -309,7 +337,25 @@ li {
    }
 }
 
+@keyframes react {
+   0% {
+      width: 0;
+   }
+}
+
 @keyframes photoshop {
+   0% {
+      width: 0;
+   }
+}
+
+@keyframes teamplayer {
+   0% {
+      width: 0;
+   }
+}
+
+@keyframes learn {
    0% {
       width: 0;
    }
@@ -339,9 +385,14 @@ li {
 }
 
 .experience__block-info {
-   width: 150px;
-   margin: 0px 10px;
+   width: 400px;
    text-align: center;
+}
+
+.experience__block-info h3 {
+   color: #d6d5d5;
+   font-weight: 600;
+   line-height: 1.4;
 }
 
 .experience__block {
@@ -350,32 +401,19 @@ li {
    margin: 0px 0px 50px 0px;
 }
 
-.experience__block-info {
-}
-
-.experience__block-info a {
-   color: #fff;
-   font-weight: 600;
-   font-size: 18px;
-}
-
-.experience__block-info span {
-}
-
 .experience__block-text {
    width: 600px;
 }
 
 .experience__block-text h5 {
-   color: #fff;
+   color: #d6d5d5;
    font-size: 16px;
    font-weight: 600;
    padding: 10px 0px 0px 0px;
 }
 
 .experience__block-text p {
-   align-items: center;
-   padding: 10px 0px 0px 0px;
+   line-height: 1.6;
 }
 
 .experience__block-year {
@@ -392,12 +430,6 @@ li {
    padding-top: 60px;
 }
 
-.portfolio-block__title {
-   padding: 10px 0px 5px 0px;
-   color: #fff;
-   text-align: center;
-   font-size: 16px;
-}
 .portfolio__filter ul {
    display: flex;
    justify-content: center;
@@ -406,7 +438,9 @@ li {
 
 .portfolio__filter ul a {
    color: #939393;
+   font-size: 18px;
 }
+
 .portfolio__filter ul li a.active {
    color: #fff;
 }
@@ -428,22 +462,21 @@ li {
    width: 260px;
 }
 
-.portfolio-block__title h3 {
-   color: #939393;
+.portfolio-block__title {
+   color: #d6d5d5;
    font-size: 16px;
-   font-weight: 600;
-}
-.portfolio-block__title h3:hover {
-   color: #fff;
-   transition: all 0.3s;
+   padding: 30px 0px 30px 0px;
+   line-height: 1.4;
 }
 
-.portfolio-block__title {
-   padding: 30px 0px 30px 0px;
+.portfolio-block__title h3 {
+   font-weight: 600;
+   font-size: 18px;
 }
 
 .portfolio-block__text {
    color: #a0a0a0;
+   line-height: 1.4;
 }
 
 /* slider styles */
@@ -486,21 +519,18 @@ li {
 }
 
 .slider__title {
-   padding-top: 50px;
+   padding-top: 60px;
 }
 
 .slider__inner {
    padding: 0px 0px 60px 0px;
 }
 
-.slider__item {
-   color: #fff;
-   text-align: center;
-}
-
 .slider__item-text {
-   margin: 60px 0px 30px 0px;
+   margin: 60px 50px 30px 50px;
    color: #d6d5d5;
+   line-height: 1.6;
+   font-size: 16px;
 }
 
 .slider__item-author h5 {
@@ -538,11 +568,9 @@ li {
    border-radius: 10px;
 }
 
-.contact__row-right {
-}
+.contact__row-right {}
 
-.contact__row-left {
-}
+.contact__row-left {}
 
 .contact__message {
    height: 200px;
