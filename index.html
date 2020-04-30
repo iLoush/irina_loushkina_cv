@@ -8,8 +8,8 @@
    <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/fonts.css">
    <script src="https://kit.fontawesome.com/17d0a1f95f.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="css/media.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -17,14 +17,21 @@
       <div class="header__top">
          <div class="container">
             <div class="header__top-menu">
+               <div class="header__burger">
+                  <span></span>
+               </div>
                <nav class="header__menu">
-                  <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#about">About</a></li>
-                     <li><a href="#experience">Experience</a></li>
-                     <li><a href="#portfolio">Portfolio</a></li>
-                     <li><a href="#slider-ref">References</a></li>
-                     <li><a href="#contact">Contact</a></li>
+                  <ul class="header__list">
+                     <li><a href="#" class="header__link">Home</a>
+                     </li>
+                     <li><a href="#about" class="header__link">About</a>
+                     </li>
+                     <li><a href="#portfolio" class="header__link">Portfolio</a>
+                     </li>
+                     <li><a href="#experience" class="header__link">Experience</a>
+                     </li>
+                     <li><a href="#slider-ref" class="header__link">References</a>
+                     </li>
                   </ul>
                </nav>
             </div>
@@ -43,19 +50,19 @@
                   <div class="content__social-inner">
                      <ul class="content__social">
                         <li>
-                           <a title="Go to Linkedin page" target="_blank"
-                              href="https://www.linkedin.com/in/iryna-loushkina-88b94798/" class="content__social-link">
+                           <a target="_blank" href="https://www.linkedin.com/in/iryna-loushkina-88b94798/"
+                              class="content__social-link">
                               <i class="fab fa-linkedin-in"></i>
                            </a>
                         </li>
                         <li>
-                           <a title="Go to GitHub page" target="_blank"
-                              href="https://github.com/iLoush?tab=repositories" class="content__social-link">
+                           <a target="_blank" href="https://github.com/iLoush?tab=repositories"
+                              class="content__social-link">
                               <i class="fab fa-github"></i>
                            </a>
                         </li>
                         <li>
-                           <a title="Go to CodePen page" target="_blank" href="https://codepen.io/irina-irina-the-vuer"
+                           <a target="_blank" href="https://codepen.io/irina-irina-the-vuer"
                               class="content__social-link">
                               <i class="fab fa-codepen"></i>
                            </a>
@@ -65,18 +72,17 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Hilversum, Netherlands</span>
                      </div>
-
                      <a href="#portfolio" class="content__btn">
                         <span>View My Portfolio</span>
                      </a>
                   </div>
-
                </div>
 
-               <div class="content__img">to add photo</div>
+               <div class="content__img">
+                  <img src="../img/" alt="profile photo">
+               </div>
 
             </div>
-
          </div>
       </div>
       </div>
@@ -91,27 +97,29 @@
             <div class="about__items-left">
                <div class="about__text">
 
-                  <p>I'm 30 years old. I tried myself in different projects, starting from sales/account management,
+                  <p>I'm 30 years old. I tried myself in different projects, starting from sales / account management,
                      implementation online booking tools to managing people.
                   </p>
 
                   <p>7 years in the travel domain made me experienced well in account management, project management,
-                     analysis, reporting, contracting, online booking tool (GetThere), GDS (Amadeus, Sabre) etc.
+                     analysis, reporting, contracting, online booking tool (GetThere), GDS (Amadeus, Sabre) and much
+                     more.
                   </p>
 
                   <p>
-                     Also, I was interesting in technologies. That's why I decided to move to a new domain connecting
-                     with it. I chose design and 3D modelling. I learned 3D Max, Photoshop, ArchiCAD and SketchUp. I
-                     have created several projects of interior design.
+                     Also, I am interesting in technologies. That's why I've decided to move to a new domain connecting
+                     with it. I chose design and 3D modelling. I've learned 3D Max, Photoshop, ArchiCAD and SketchUp.
+                     I've created several projects of interior design.
                   </p>
 
                   <p>
-                     After that, my family relocated to the Netherlands and I decided to deep dive into technologies and
+                     After that, my family relocated to the Netherlands and I've decided to deep dive into technologies
+                     and
                      learned how to create them. I chose web development.
                   </p>
 
                   <p>
-                     Over 3 months I study how to create responsive web sites and environment connecting to that
+                     Over 3 months I study how to create responsive websites and environment connecting to that
                      process. I am familiar with HTML, CSS (SCSS), JavaScript, Git, GitHub, and responsive web design. I
                      use the BEM methodology for writing code. I keep developing my skills in this field.
                   </p>
@@ -126,7 +134,8 @@
 
                </div>
                <div class="about__download">
-                  <a href="img/invoice.pdf" download="invoice.pdf"><span>Download My CV</span></a>
+                  <a href="img/CV_Loushkina_Web_Developer.pdf" download="CV_Loushkina_Web_Developer.pdf"><span>Download
+                        My CV</span></a>
                </div>
             </div>
 
@@ -197,6 +206,102 @@
 
          </div>
       </div>
+   </section>
+
+   <section id="portfolio" class="portfolio">
+      <div class="container">
+         <div class="portfolio__title title--default">
+            <span>Portfolio</span>
+         </div>
+
+         <div class="portfolio__filter">
+            <ul>
+               <li><a class="portfolio__filter-link" class="active" href="#" data-target="all">All</a></li>
+               <li><a class="portfolio__filter-link" href="#" data-target="landing">Landing page</a></li>
+               <li><a class="portfolio__filter-link" href="#" data-target="website">Website</a></li>
+               <li><a class="portfolio__filter-link" href="#" data-target="portfolio">Portfolio</a></li>
+               <li><a class="portfolio__filter-link" href="#" data-target="portfolio">Other</a></li>
+            </ul>
+         </div>
+
+         <div class="portfolio-block">
+
+            <div class="portfolio-block__items" data-id="landing" data-id="landing">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
+                     <img src="img/travel.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <h3>Travel page</h3>
+                  <h4>Tech stack - HTML, CSS</h4>
+               </div>
+               <div class="portfolio-block__text">
+                  <p>My first small web page witn an image, different style lists and a link to another page.</p>
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="website">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/tesla/">
+                     <img src="img/tesla.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <h3>Landing page about Tesla</h3>
+                  <h4>Tech stack - HTML, CSS, jGuery</h4>
+               </div>
+               <div class="portfolio-block__text">
+                  Landing page with a burger menu, slider and video.
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="website">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/company_website/">
+                     <img src="img/company_website.jpg" alt="travel page">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <h3>First page of a company website</h3>
+                  <h4>Tech stack - HTML, CSS, jGuery</h4>
+               </div>
+               <div class="portfolio-block__text">
+                  First page of a company website with burger menu, slider, and form.
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="martaup">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href="https://iloush.github.io/martaup/">
+                     <img src="img/martaup.png" alt="martaup">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <h3>Martaup</h3>
+                  <h4>Tech stack - HTML, CSS, jQuery, JavaScript</h4>
+               </div>
+               <div class="portfolio-block__text">
+                  <p>First page of a company website witn slider and different components</p>
+               </div>
+            </div>
+
+            <div class="portfolio-block__items" data-id="bike">
+               <div class="portfolio-block__image">
+                  <a target="_blank" href=" ">
+                     <img src="img/bike.jpg" alt="bike">
+                  </a>
+               </div>
+               <div class="portfolio-block__title">
+                  <h3>Landing page about bikes</h3>
+                  <h4>Tech stack - HTML, CSS, SCSS, jQuery, JavaScript</h4>
+               </div>
+               <div class="portfolio-block__text">
+                  <p>Responsive landing page about bike's shop</p>
+               </div>
+            </div>
+
+         </div>
    </section>
 
    <section id="experience" class="experience">
@@ -285,118 +390,6 @@
       </div>
    </section>
 
-   <section id="portfolio" class="portfolio">
-      <div class="container">
-         <div class="portfolio__title title--default">
-            <span>Portfolio</span>
-         </div>
-
-         <div class="portfolio__filter">
-            <ul>
-               <li><a class="active" href="#" data-target="all">All</a></li>
-               <li><a href="#" data-target="landing">Landing page</a></li>
-               <li><a href="#" data-target="website">Website</a></li>
-               <li><a href="#" data-target="portfolio">Portfolio</a></li>
-               <li><a href="#" data-target="portfolio">Other</a></li>
-            </ul>
-         </div>
-
-         <div class="portfolio-block">
-
-            <div class="portfolio-block__items" data-id="landing" data-id="landing">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
-                     <img src="img/travel.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>Travel page</h3>
-                  <h4>Tech stack - HTML, CSS</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  <p>My first small web page witn an image, different style lists and a link to another page.</p>
-               </div>
-            </div>
-
-            <div class="portfolio-block__items" data-id="website">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/tesla/">
-                     <img src="img/tesla.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>Landing page about Tesla</h3>
-                  <h4>Tech stack - HTML, CSS, jGuery</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  Landing page with a burger menu, slider and video.
-               </div>
-            </div>
-
-            <div class="portfolio-block__items" data-id="website">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/tesla/">
-                     <img src="img/company_website.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>First page of a company website</h3>
-                  <h4>Tech stack - HTML, CSS, jGuery</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  First page of company website with burger menu, slider, and form.
-               </div>
-            </div>
-
-            <div class="portfolio-block__items" data-id="landing" data-id="landing">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
-                     <img src="img/travel.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>Travel page</h3>
-                  <h4>Tech stack - HTML, CSS</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  <p>My first small web page witn an image, different style lists and a link to another page.</p>
-               </div>
-            </div>
-
-            <div class="portfolio-block__items" data-id="landing" data-id="landing">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
-                     <img src="img/travel.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>Travel page</h3>
-                  <h4>Tech stack - HTML, CSS</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  <p>My first small web page witn an image, different style lists and a link to another page.</p>
-               </div>
-            </div>
-
-            <div class="portfolio-block__items" data-id="landing" data-id="landing">
-               <div class="portfolio-block__image">
-                  <a target="_blank" href="https://iloush.github.io/project1_travel_page/">
-                     <img src="img/travel.jpg" alt="travel page">
-                  </a>
-               </div>
-               <div class="portfolio-block__title">
-                  <h3>Travel page</h3>
-                  <h4>Tech stack - HTML, CSS</h4>
-               </div>
-               <div class="portfolio-block__text">
-                  <p>My first small web page witn an image, different style lists and a link to another page.</p>
-               </div>
-            </div>
-         </div>
-
-      </div>
-   </section>
-
    <section id="slider-ref" class="slider-ref">
       <div class="container">
          <div class="slider__title title--default">
@@ -435,40 +428,6 @@
                      MICE Manager at American Express GBT, Ukraine
                   </p>
                </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section id="contact" class="contact">
-      <div class="container">
-         <div class="contact__title title--default">
-            Contact
-         </div>
-         <div class="contact__wrapper">
-            <div class="contact__rows">
-               <div class="contact__row-right">
-                  <div class="contact__row">
-                     <input type="text" placeholder="Your name:">
-                  </div>
-                  <div class="contact__row">
-                     <input type="tel" placeholder="Phone:">
-                  </div>
-               </div>
-               <div class="contact__row-left">
-                  <div class="contact__row">
-                     <input type="email" placeholder="Email:">
-                  </div>
-                  <div class="contact__row">
-                     <input type="text" placeholder="Subject:">
-                  </div>
-               </div>
-            </div>
-            <div class="contact__message">
-               <textarea class="contact__message" name="message" placeholder="Message:"></textarea>
-            </div>
-            <div class="contact__btn">
-               <button type="submit">Send message</button>
             </div>
          </div>
       </div>

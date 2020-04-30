@@ -1,0 +1,271 @@
+@media(max-width: 1200px) {}
+
+@media(max-width: 992px) {
+
+   .about {
+      padding-top: 40px;
+   }
+
+   .about__title {
+      padding: 0px 0px 0px 0px;
+   }
+
+   .about__items-left {
+      margin: 0px 0px 0px 5px;
+   }
+
+   .about__items {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .about__items-right {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .about__tech-skills {
+      flex: 0 1 50%;
+   }
+
+   .about__soft-skills {
+      flex: 0 1 50%;
+      /* width: 250px; */
+   }
+
+   .about__text {
+      font-size: 16px;
+   }
+
+   .portfolio-block {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media(max-width: 767px) {
+
+   body.lock {
+      overflow: hidden;
+   }
+
+   .header__top__menu {
+      height: 50px;
+   }
+
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+   }
+
+   .header__burger span {
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__burger:before,
+   .header__burger:after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   .header__burger:before {
+      top: 0;
+   }
+
+   .header__burger:after {
+      bottom: 0;
+   }
+
+   .header__burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+   }
+
+   .header__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+
+   .header__burger.active span {
+      display: none;
+   }
+
+   .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #252525;
+      padding: 80px 10px 20px 20px;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+   }
+
+   .header__menu.active {
+      top: 0;
+   }
+
+   .header__list {
+      display: block;
+   }
+
+   .header__list li {
+      margin: 0px 0px 30px 0px;
+   }
+
+   .header__link {
+      font-size: 26px;
+   }
+
+   .header__link:hover {
+      font-size: 30px;
+      font-weight: 600;
+   }
+
+   .content__img {
+      display: none;
+   }
+
+   .skills--title {
+      width: 300px;
+   }
+
+   .about__tech-skills li,
+   .about__soft-skills li {
+      width: 300px;
+   }
+
+   .portfolio-block {
+      display: flex;
+      flex-direction: column;
+   }
+
+}
+
+@media(max-width: 420px) {
+   .header__content-inner {
+      padding: 0px 0px 0px 10px;
+   }
+
+   .about__text p {}
+
+   .about__items-right {
+      padding: 0px 0px 0px 45px;
+   }
+
+   .skills--title {
+      width: 300px;
+   }
+
+   .about__tech-skills li,
+   .about__soft-skills li {
+      width: 300px;
+   }
+
+   .portfolio__title {
+      padding-top: 30px;
+   }
+
+   .portfolio-block {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .experience__title {
+      padding-top: 30px;
+   }
+
+   .experience__block-info {
+      width: 200px;
+      margin: 0px 20px 0px 0px;
+   }
+
+   .slider__title {
+      padding-top: 30px;
+   }
+
+}
+
+@media(max-width: 320px) {
+   .header__content-inner {
+      padding: 0px 0px 0px 10px;
+   }
+
+   .about__text p {}
+
+   .about__download {
+      margin-top: 15px;
+   }
+
+   .about__items-right {
+      padding: 0px 0px 0px 15px;
+   }
+
+   .skills--title {
+      width: 250px;
+   }
+
+   .about__tech-skills li,
+   .about__soft-skills li {
+      width: 250px;
+   }
+
+   /* portfolio  */
+   .portfolio__title {
+      padding-top: 30px;
+   }
+
+   .portfolio-block {
+      display: flex;
+      flex-direction: column;
+   }
+
+   /* experience */
+   .experience__title {
+      padding-top: 30px;
+   }
+
+   .experience__block-info {
+      text-align: left;
+      margin-bottom: 15px;
+   }
+
+   .experience__block-text {
+      width: 300px;
+   }
+
+   .experience__block {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .experience__block-text h5 {
+      padding: 30px 0px 0px 0px;
+      text-align: right;
+   }
+
+   /* references */
+   .slider-ref {
+      display: none;
+   }
+
+   .footer {
+      background: #252525;
+   }
+}
