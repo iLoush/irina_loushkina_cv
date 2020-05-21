@@ -50,6 +50,7 @@ body {
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   text-align: center;
    height: 60px;
 }
 
@@ -118,6 +119,15 @@ body {
    display: flex;
 }
 
+.content__social-udemy {
+   width: 90px;
+}
+
+.content__social-udemy:hover {
+   width: 100px;
+   transition: all 0.5s;
+}
+
 .content__social-location {
    padding: 40px 0px 40px 0px;
    font-size: 18px;
@@ -163,7 +173,6 @@ body {
 /* section about me */
 .about {
    background: #3a3a3a;
-   padding-top: 60px;
 }
 
 .about__title {
@@ -190,6 +199,10 @@ body {
    margin: 30px 0px;
    letter-spacing: 0.8;
    line-height: 1.6;
+}
+
+.about__text p strong {
+   color: #fff;
 }
 
 .about__p--link {
@@ -255,7 +268,7 @@ body {
    display: block;
    width: 450px;
    margin: 20px auto;
-   color: #d6d5d5;
+   color: #fff;
 }
 
 .bar {
@@ -311,17 +324,22 @@ body {
 
 .learn {
    width: 100%;
-   animation: teamplayer 2s;
+   animation: learn 2s;
 }
 
 .english {
    width: 95%;
-   animation: jquery 2s;
+   animation: english 2s;
 }
 
 .russian {
    width: 100%;
    animation: russian 2s;
+}
+
+.dutch {
+   width: 20%;
+   animation: dutch 2s;
 }
 
 .skills--title {
@@ -392,11 +410,16 @@ body {
    }
 }
 
+@keyframes dutch {
+   0% {
+      width: 0;
+   }
+}
+
 /* section my experience*/
 .experience {
    background: #3a3a3a;
    color: #939393;
-   padding-top: 60px;
 }
 
 .experience__title {
@@ -450,7 +473,6 @@ body {
 /* portfolio style */
 .portfolio {
    background: #252525;
-   padding-top: 60px;
 }
 
 .portfolio__title {
@@ -541,7 +563,6 @@ body {
 .slider-ref {
    background: #252525;
    text-align: center;
-   padding-top: 60px;
 }
 
 .slider__title {
