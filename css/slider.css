@@ -1,0 +1,64 @@
+/* slider styles */
+.slick-track {
+   display: flex;
+   align-items: flex-start;
+}
+
+.slick-list {
+   overflow: hidden;
+}
+
+.slick-dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slick-dots li {
+   margin: 0 10px;
+}
+
+.slick-dots .slick-active button {
+   background-color: transparent;
+   border: 1px solid #fff;
+}
+
+.slick-dots button {
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+}
+
+/* references style */
+.slider-ref {
+   background: #252525;
+   text-align: center;
+   height: 450px;
+}
+
+.slider__title {
+   padding-top: 60px;
+}
+
+.slider__inner {
+   padding: 0px 0px 60px 0px;
+}
+
+.slider__item-text {
+   margin: 60px 50px 30px 50px;
+   color: #d6d5d5;
+   line-height: 1.6;
+   font-size: 16px;
+}
+
+.slider__item-author h5 {
+   font-size: 18px;
+   color: #939393;
+   font-weight: 600;
+}
+
+.slider__item-position {
+   margin: 5px 0px 30px 0px;
+   color: #939393;
+}

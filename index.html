@@ -71,7 +71,7 @@
                            <a target="_blank"
                               href="https://www.udemy.com/certificate/UC-2ed88bb6-3632-45c4-9556-bead9e6937cf/"
                               class="content__social-link">
-                              <img class="content__social-udemy" src="img/udemy.svg" alt="udemy">
+                              <img class="content__social-udemy" src="img/logo/udemy.svg" alt="udemy">
                            </a>
                         </li>
                      </ul>
@@ -86,7 +86,7 @@
                </div>
 
                <div class="content__img">
-                  <img src="../img/" alt="profile photo">
+                  <img src="img/" alt="profile photo" />
                </div>
 
             </div>
@@ -115,21 +115,22 @@
 
                   <p>
                      Also, I am interesting in technologies. That's why I've decided to move to a new domain connecting
-                     with it. I chose design and 3D modelling. I've learned 3D Max, Photoshop, ArchiCAD and SketchUp.
+                     with it. I choose design and 3D modelling. I've learned 3D Max, Photoshop, ArchiCAD and SketchUp.
                      I've created several projects of interior design.
                   </p>
 
                   <p>
                      After that, my family relocated to the Netherlands and I've decided to deep dive into technologies
-                     and learned how to create them. I chose a frontend development.
+                     and learned how to create them. I choose a frontend development.
                   </p>
 
                   <p>
-                     Over 4 months I study how to create responsive websites and environment connecting to that
+                     Over 5 months I study how to create responsive websites and environment connecting to that
                      process.
                   </p>
                   <p>
-                     I am familiar with <strong>HTML5, CSS3 (SCSS), JavaScript, React, Redux, Git, GitHub,</strong>
+                     I am familiar with <strong>HTML5, CSS3 (SCSS), JavaScript, React, Redux, Git, GitHub, npm, Webpack,
+                        AJAX, </strong>
                      developers tools and responsive web design. I use the <strong>BEM methodology</strong>. I keep
                      developing my skills in frontend development.
                   </p>
@@ -250,6 +251,7 @@
                <div class="portfolio-block__title">
                   <h3>Travel page</h3>
                   <h4>Tech stack - HTML5, CSS3</h4>
+                  <p>(not responsive yet)</p>
                </div>
                <div class="portfolio-block__text">
                   <p>My first small web page witn an image, different style lists and a link to another page.</p>
@@ -265,6 +267,7 @@
                <div class="portfolio-block__title">
                   <h3>Landing page about Tesla</h3>
                   <h4>Tech stack - HTML5, CSS3, jQuery</h4>
+                  <p>(responsive)</p>
                </div>
                <div class="portfolio-block__text">
                   Landing page with a burger menu, slider and video.
@@ -280,9 +283,11 @@
                <div class="portfolio-block__title">
                   <h3>First page of a company website</h3>
                   <h4>Tech stack - HTML5, CSS3, jQuery</h4>
+                  <p>(not responsive yet)</p>
                </div>
                <div class="portfolio-block__text">
-                  First page of a company website with burger menu, slider, and form.
+                  <p>First page of a company website with burger menu, slider, and form.</p>
+
                </div>
             </div>
 
@@ -295,6 +300,7 @@
                <div class="portfolio-block__title">
                   <h3>Martaup</h3>
                   <h4>Tech stack - HTML5, CSS3, jQuery, JavaScript</h4>
+                  <p>(responsive)</p>
                </div>
                <div class="portfolio-block__text">
                   <p>First page of a company website witn slider and different components</p>
@@ -309,7 +315,8 @@
                </div>
                <div class="portfolio-block__title">
                   <h3>Landing page about bikes</h3>
-                  <h4>Tech stack - HTML5, CSS3, SCSS, jQuery, JavaScript</h4>
+                  <h4>Tech stack - HTML5, CSS3, SCSS, jQuery JavaScript</h4>
+                  <p>(responsive)</p>
                </div>
                <div class="portfolio-block__text">
                   <p>Responsive landing page about bike's shop</p>
@@ -325,6 +332,7 @@
                <div class="portfolio-block__title">
                   <h3>Website about meal planning and calories calculation</h3>
                   <h4>Tech stack - HTML5, CSS3, SCSS, JavaScript, AJAX, small data base</h4>
+                  <p>(not responsive yet)</p>
                </div>
                <div class="portfolio-block__text">
                   <p>A website about meal planning where user can choose a meal plan.</p>
@@ -339,87 +347,101 @@
 
    <section id="experience" class="experience">
       <div class="container">
+
          <div class="experience__title title--default">
             My Experience
          </div>
 
-         <div class="experience__block-inner">
+         <div class=tabs>
+            <div class="tabs__sidebar">
+               <button class="tab__button tab__button--active" data-for-tab="1">2020</button>
+               <button class="tab__button" data-for-tab="2">2018 - 2019</button>
+               <button class="tab__button" data-for-tab="3">2017 - 2018</button>
+               <button class="tab__button" data-for-tab="4">2014 - 2017</button>
+               <button class="tab__button" data-for-tab="5">2011 - 2014</button>
+            </div>
 
-            <div class="experience__block">
-               <div class="experience__block-info">
-                  <h3>Freelance</h3>
-                  <h3>(web development)</h3>
-                  <h4>3 months</h4>
-               </div>
-               <div class="experience__block-text">
-                  <h5>Web developer</h5>
-                  <p>Creating responsive landing pages with HTML, CSS(SCSS), jQuery, Javascript</p>
-                  <p>Familiar with Developer Tools and version control system (Git, GitHub)</p>
-                  <p>Familiar the BEM methodology</p>
+            <div class="tab__content tab__content--active" data-tab="1">
+               <a target="_blank" href="https://www.udemy.com/certificate/UC-2ed88bb6-3632-45c4-9556-bead9e6937cf/">
+                  <img class="content-img" src="img/logo/udemy.svg" alt="udemy" />
+               </a>
+               <h5>Frontend developer</h5>
+               <div class="tabcontent__descr">
+                  <p>Semantic, cross-browser, adaptive, and responsive development of landing pages.</p>
+                  <p>Familiar with Developer Tools and Version Control system (Git, GitHub).</p>
+                  <p>Tech stack:</p>
+                  <p>HTML5</p>
+                  <p>CSS3 (SCSS)</p>
+                  <p>BEM methodology</p>
+                  <p>JavaScript</p>
+                  <p>React/Redux</p>
+                  <p>npm</p>
+                  <p>Webpack</p>
+                  <p>AJAX</p>
                </div>
             </div>
 
-            <div class="experience__block">
-               <div class="experience__block-info">
-                  <h3>Freelance</h3>
-                  <h3>(3D Modelling and design)</h3>
-                  <h4>1,5 years</h4>
-               </div>
-               <div class="experience__block-text">
-                  <h5>3D Modelling and Design</h5>
+            <div class="tab__content" data-tab="2">
+               <a target="_blank" href="https://eds.ua/">
+                  <img class="content-img" src="img/logo/eds.png" alt="design school" />
+               </a>
+               <h5>3D Modelling and Design</h5>
+               <div class="tabcontent__descr">
                   <p>Creating visualizations for interior design projects in 3D Max and Photoshop</p>
                   <p>Developing master plans for interior design in ArchiCAD and SketchUp</p>
                </div>
             </div>
 
-            <div class="experience__block">
-               <div class="experience__block-info">
-                  <h3>Booking.com</h3>
-                  <h4>1 year</h4>
-               </div>
-               <div class="experience__block-text">
-                  <h5>Account manager</h5>
+            <div class="tab__content" data-tab="3">
+               <a target="_blank" href="https://www.booking.com/">
+                  <img class="content-img" src="img/logo/booking.png" alt="booking.com" />
+               </a>
+               <h5>Account manager</h5>
+               <div class="tabcontent__descr">
                   <p>Develop long-term strategic relationships with key accounts.</p>
                   <p>Empowering Customers on how to use the system, tools, and available products.</p>
-                  <p>Develop and execute marketing and awareness programs, events (f2f meetings, Customers webinars and
-                     educational Seminars etc).</p>
+                  <p>Develop and execute marketing and awareness programs, events (f2f meetings, Customers
+                     webinars
+                     and educational Seminars etc).</p>
                   <p>Managing Partner’s Retention Expert role on a regional level.</p>
                </div>
             </div>
 
-            <div class="experience__block">
-               <div class="experience__block-info">
-                  <h3>American Express GBT</h3>
-                  <h4>3 years</h4>
-               </div>
-               <div class="experience__block-text">
-                  <h5>Senior Account manager</h5>
+            <div class="tab__content" data-tab="4">
+               <a target="_blank" href="https://www.amexglobalbusinesstravel.com/">
+                  <img class="content-img" src="img/logo/amex.svg" alt="American Express GBT" />
+               </a>
+               <h5>Senior Account manager</h5>
+               <div class="tabcontent__descr">
                   <p>Leading development process within the team</p>
-                  <p>Drive business results and support delivery of all key business metrics including charge volume,
+                  <p>Drive business results and support delivery of all key business metrics including charge
+                     volume,
                      sales, targets, retention, etc</p>
                   <p>Attending international forums, exhibitions, and meetings (Vienna, London, Tallinn</p>
                   <br>
                   <h5>Account manager</h5>
-                  <p>Build up a close relationship with the Customers by regularly calling and visiting them with an
-                     objective (i.e. survey of service satisfaction, communication, business travel reviews, selling or
+                  <p>Build up a close relationship with the Customers by regularly calling and visiting them with
+                     an
+                     objective (i.e. survey of service satisfaction, communication, business travel reviews,
+                     selling
+                     or
                      implementing new products etc)</p>
                   <p>Manage requirements related online booking tools implementation for Customers</p>
                </div>
             </div>
 
-            <div class="experience__block">
-               <div class="experience__block-info">
-                  <h3>Ukraine International Airlines</h3>
-                  <h4>3 years</h4>
-               </div>
-               <div class="experience__block-text">
-                  <h5>Flight attandant</h5>
+            <div class="tab__content" data-tab="5">
+               <a target="_blank" href="https://www.flyuia.com/ua/en/home">
+                  <img src="img/logo/uia.png" alt="UIA" />
+               </a>
+               <h5>Flight attendant</h5>
+               <div class="tabcontent__descr">
                   <p>Proper execution of the duties related to the safety of the aircraft and passengers.</p>
                   <p>Coordinating all procedures with team-members.</p>
                </div>
             </div>
-
          </div>
+
       </div>
    </section>
 

@@ -1,0 +1,65 @@
+.experience {
+   background: #3a3a3a;
+   color: #939393;
+   padding-top: 60px;
+   height: 630px;
+}
+
+.tabs {
+   display: flex;
+   padding: 30px 0px 50px 0px;
+}
+
+.tabs__sidebar {
+   width: 200px;
+   flex-shrink: 0;
+}
+
+.tab__button {
+   display: block;
+   padding: 15px;
+   border: none;
+   width: 100%;
+   outline: none;
+   cursor: pointer;
+   background: #3a3a3a;
+   color: #939393;
+   font-size: 16px;
+}
+
+.tab__button--active {
+   font-weight: bold;
+   color: #fff;
+   font-size: 20px;
+   transition: all 0.5s;
+}
+
+.tab__content {
+   color: #d6d5d5;
+   padding: 15px;
+   display: none;
+   line-height: 2;
+}
+
+.tab__content h5 {
+   font-weight: bold;
+   font-size: 18px;
+   padding-top: 20px;
+}
+
+.tab__content a {
+   color: #fff;
+}
+
+.tab__content p {
+   line-height: 2;
+}
+
+.tab__content--active {
+   display: block;
+   transition: all 0.5s;
+}
+
+.content-img {
+   width: 150px;
+}
