@@ -153,4 +153,6 @@
    padding: 0px 0px 0px 10px;
 }
 
-.content__img {}
+.content__img {
+   margin-top: 70px;
+}
