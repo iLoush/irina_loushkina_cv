@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
    setupTabs();
 
    // slider
-   $(document).ready(function () {
+   $(function () {
       $('.slider__inner').slick({
          arrows: false,
          dots: true,
@@ -45,6 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
          $('.header__burger, .header__menu').toggleClass('active');
          $('body').toggleClass('lock');
       });
+
    });
 
 

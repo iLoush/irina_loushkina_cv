@@ -49,24 +49,16 @@
    line-height: 44px;
    border-radius: 20px;
    height: 44px;
-   padding: 0px 20px 0px 40px;
+   padding: 0px 20px 0px 20px;
    float: right;
    margin: 50px 0px;
    background-color: #fff;
    position: relative;
 }
 
-.about__download::before {
-   color: #252525;
-   content: "\f01a";
-   font-family: "icomoon";
-   position: absolute;
-   left: 0;
-   padding: 0px 0px 0px 15px;
-}
-
 .about__download span {
    color: #252525;
+
 }
 
 .about__download:hover {
