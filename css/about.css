@@ -50,7 +50,6 @@
    border-radius: 20px;
    height: 44px;
    padding: 0px 20px 0px 20px;
-   float: right;
    margin: 50px 0px;
    background-color: #fff;
    position: relative;
@@ -122,13 +121,18 @@
    animation: javascript 2s;
 }
 
-.react {
-   width: 30%;
-   animation: javascript 2s;
-}
-
 .jquery {
    width: 70%;
+   animation: jquery 2s;
+}
+
+.npm {
+   width: 80%;
+   animation: jquery 2s;
+}
+
+.webpack {
+   width: 60%;
    animation: jquery 2s;
 }
 
@@ -194,7 +198,14 @@
    }
 }
 
-@keyframes react {
+
+@keyframes npm {
+   0% {
+      width: 0;
+   }
+}
+
+@keyframes webpack {
    0% {
       width: 0;
    }
