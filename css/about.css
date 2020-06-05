@@ -4,7 +4,7 @@
 }
 
 .about__title {
-  padding-top: 60px;
+  padding-top: 6rem;
 }
 
 .about__items {
@@ -14,17 +14,17 @@
 }
 
 .about__items-left {
-  margin: 20px 40px 30px 0px;
+  margin: 2rem 4rem 3rem 0;
 }
 
 .about__text {
   color: #d6d5d5;
-  font-size: 18px;
-  margin-top: 55px;
+  font-size: 1.8rem;
+  margin-top: 5.5rem;
 }
 
 .about__text p {
-  margin: 30px 0px;
+  margin: 3rem 0;
   letter-spacing: 0.8;
   line-height: 1.6;
 }
@@ -40,23 +40,24 @@
 }
 
 .about__p--link:hover {
-  font-size: 20px;
+  font-size: 2rem;
   transition: all 0.3s;
 }
 
 .about__download {
   display: inline-block;
-  line-height: 44px;
-  border-radius: 20px;
-  height: 44px;
-  padding: 0px 20px 0px 20px;
-  margin: 50px 0px;
+  line-height: 4.4rem;
+  border-radius: 2rem;
+  height: 4.4rem;
+  padding: 0 2rem 0 2rem;
+  margin: 5rem 0;
   background-color: #fff;
   position: relative;
 }
 
 .about__download span {
   color: #252525;
+  font-size: 1.8rem;
 }
 
 .about__download:hover {
@@ -67,7 +68,7 @@
 }
 
 .about__items-right {
-  padding: 45px 0px 30px 0px;
+  padding: 4.5rem 0 3rem 0;
 }
 
 .about__tech-skills span,
@@ -76,17 +77,18 @@
 }
 
 .about__soft-skills {
-  padding: 30px 0px 10px 0px;
+  padding: 3rem 0 1rem 0;
 }
 
 .about__tech-skills li,
 .about__soft-skills li {
   list-style: none;
-  margin: 15px 0;
+  margin: 1.5rem 0;
   display: block;
-  width: 450px;
-  margin: 20px auto;
+  width: 45rem;
+  margin: 2rem auto;
   color: #fff;
+  font-size: 1.8rem;
 }
 
 .bar {
@@ -95,8 +97,8 @@
   background: #000;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 0 10px #939393;
-  margin-top: 10px;
+  box-shadow: 0 0 1rem #939393;
+  margin-top: 1rem;
 }
 
 .bar span {
@@ -179,10 +181,10 @@
 
 .skills--title {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  width: 500px;
+  width: 50rem;
 }
 
 @keyframes html {

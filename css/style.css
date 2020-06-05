@@ -7,15 +7,20 @@
 @import "experience.css";
 
 /* default styles */
+
+html {
+   font-size: 62.5%;
+}
+
 .container {
-   max-width: 1200px;
+   max-width: 120rem;
    margin: 0 auto;
-   padding: 0px 15px;
+   padding: 0 1.5rem;
 }
 
 .title--default {
    font-weight: 700;
-   font-size: 32px;
+   font-size: 3.2rem;
    color: #fff;
    text-align: center;
 }
@@ -28,8 +33,9 @@ body {
 .footer {
    background: #3a3a3a;
    color: #a0a0a0;
-   height: 40px;
+   height: 4rem;
    text-align: center;
    align-items: center;
-   padding-top: 12px;
+   padding-top: 1.2rem;
+   font-size: 1.6rem;
 }

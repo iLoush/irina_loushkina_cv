@@ -15,7 +15,7 @@
 }
 
 .slick-dots li {
-   margin: 0 10px;
+   margin: 0 1rem;
 }
 
 .slick-dots .slick-active button {
@@ -25,8 +25,8 @@
 
 .slick-dots button {
    font-size: 0;
-   width: 10px;
-   height: 10px;
+   width: 1rem;
+   height: 1rem;
    border-radius: 50%;
 }
 
@@ -38,27 +38,28 @@
 }
 
 .slider__title {
-   padding-top: 60px;
+   padding-top: 6rem;
 }
 
 .slider__inner {
-   padding: 0px 0px 60px 0px;
+   padding-bottom: 6rem;
 }
 
 .slider__item-text {
-   margin: 60px 50px 30px 50px;
+   margin: 6rem 5rem 3rem 5rem;
    color: #d6d5d5;
    line-height: 1.6;
-   font-size: 16px;
+   font-size: 1.6rem;
 }
 
 .slider__item-author h5 {
-   font-size: 18px;
+   font-size: 1.8rem;
    color: #939393;
    font-weight: 600;
 }
 
 .slider__item-position {
-   margin: 5px 0px 30px 0px;
+   margin: 0.5rem 0 3rem 0;
    color: #939393;
+   font-size: 1.6rem;
 }
