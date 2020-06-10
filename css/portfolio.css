@@ -33,6 +33,10 @@
    font-size: 1.6rem;
 }
 
+.portfolio-block__image img {
+   height: 200px;
+}
+
 .image img {
    height: 200px;
    width: 260px;
