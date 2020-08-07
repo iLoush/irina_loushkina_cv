@@ -149,7 +149,16 @@
    margin-top: 7rem;
 }
 
+@media (max-width: 1200px) {
+   .header__content-inner {
+      margin-left: 4rem;
+   }
+}
+
 @media (max-width: 767px) {
+   .content__img {
+      display: none;
+   }
    body.lock {
       overflow: hidden;
    }

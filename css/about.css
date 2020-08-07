@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  padding: 0 3rem;
 }
 
 .about__items-left {
@@ -20,6 +21,7 @@
 .about__text {
   font-size: 1.8rem;
   margin-top: 5.5rem;
+  padding-right: 2rem;
 }
 
 .about__text p {
@@ -193,8 +195,6 @@
   display: block;
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
-  width: 50rem;
 }
 
 @keyframes html {
@@ -281,6 +281,9 @@
   }
 }
 
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 1020px) {
   .about__items {
     display: flex;
@@ -289,7 +292,11 @@
 
   .about__items-right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .about__text {
+    margin: 0 2.5rem;
   }
 
   .about__soft-skills {
@@ -299,5 +306,36 @@
   .about__tech-skills li,
   .about__soft-skills li {
     width: 35rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .about__items-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__tech-skills li,
+  .about__soft-skills li {
+    width: 45rem;
+  }
+
+  .about__soft-skills {
+    margin-top: 3rem;
+  }
+
+  .about__download {
+    left: 30%;
+  }
+}
+
+@media (max-width: 520px) {
+  .about__tech-skills li,
+  .about__soft-skills li {
+    width: 30rem;
+  }
+
+  .slider-ref {
+    display: none;
   }
 }

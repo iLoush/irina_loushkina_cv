@@ -55,3 +55,7 @@
    object-fit: cover;
    display: block;
 }
+
+.portfolio-block__image img:hover {
+   opacity: 0.5;
+}
