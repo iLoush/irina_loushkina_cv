@@ -2,44 +2,20 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
-   const buttons = document.querySelectorAll('.portfolio__filter-link');
+   // show text in section about
+   const text = document.querySelector('.about__text-invisible');
+   const readMore = document.querySelector('.show');
 
-   buttons.forEach(item => {
-      item.addEventListener('click', () => {
-         buttons.forEach(item => {
-            item.className = "";
-         });
-         item.className = 'active';
-      });
-   });
-
-
-   // tabs
-   function setupTabs() {
-
-      document.querySelectorAll('.tab__button').forEach(button => {
-         button.addEventListener('click', () => {
-            const sideBar = button.parentElement;
-            const tabContainer = sideBar.parentElement;
-            const tabNumer = button.dataset.forTab;
-            const tabToActivate = tabContainer.querySelector(`.tab__content[data-tab="${tabNumer}"]`);
-
-            sideBar.querySelectorAll('.tab__button').forEach(button => {
-               button.classList.remove('tab__button--active');
-            });
-
-            tabContainer.querySelectorAll('.tab__content').forEach(tab => {
-               tab.classList.remove('tab__content--active');
-            });
-
-            button.classList.add('tab__button--active');
-            tabToActivate.classList.add('tab__content--active');
-         });
-      });
-
+   function showText() {
+      if (text.style.display === 'none') {
+         text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
    }
 
-   setupTabs();
+   readMore.addEventListener('click', showText);
+
 
    // slider
    $(function () {

@@ -24,6 +24,15 @@
   padding-right: 2rem;
 }
 
+.about__text-invisible {
+  display: none;
+}
+
+.show {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .about__text p {
   margin: 3rem 0;
   letter-spacing: 0.8;
@@ -315,6 +324,11 @@
     flex-direction: column;
   }
 
+  .about__text {
+    margin: 0;
+    padding: 0;
+  }
+
   .about__tech-skills li,
   .about__soft-skills li {
     width: 45rem;
@@ -337,5 +351,9 @@
 
   .slider-ref {
     display: none;
+  }
+
+  .about__items {
+    padding: 0;
   }
 }
