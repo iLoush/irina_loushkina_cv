@@ -4,11 +4,19 @@
 @import "about.css";
 @import "portfolio.css";
 @import "slider.css";
-@import "experience.css";
+@import "footer.css";
+
+/* variables */
+:root {
+   --primary-bg-dark: #252525;
+   --primary-bg-light: #3a3a3a;
+   --primary-color: #d6d5d5;
+   --secondary-color: #939393;
+}
 
 /* default styles */
-
 html {
+   /* defines what 1rem is 10/16*100 = 62,5% */
    font-size: 62.5%;
 }
 
@@ -27,15 +35,5 @@ html {
 
 body {
    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-/* footer style */
-.footer {
-   background: #3a3a3a;
-   color: #a0a0a0;
-   height: 4rem;
-   text-align: center;
-   align-items: center;
-   padding-top: 1.2rem;
-   font-size: 1.6rem;
+   color: var(--primary-color);
 }

@@ -1,0 +1,11 @@
+.footer {
+   background: var(--primary-bg-dark);
+   height: 4rem;
+   padding: 1rem 0;
+}
+
+.footer p {
+   text-align: center;
+   align-items: center;
+   font-size: 1.6rem;
+}

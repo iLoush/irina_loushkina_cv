@@ -2,6 +2,18 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+   const buttons = document.querySelectorAll('.portfolio__filter-link');
+
+   buttons.forEach(item => {
+      item.addEventListener('click', () => {
+         buttons.forEach(item => {
+            item.className = "";
+         });
+         item.className = 'active';
+      });
+   });
+
+
    // tabs
    function setupTabs() {
 

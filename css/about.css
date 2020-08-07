@@ -1,6 +1,6 @@
 /* section about me */
 .about {
-  background: #3a3a3a;
+  background: var(--primary-bg-light);
 }
 
 .about__title {
@@ -10,15 +10,14 @@
 .about__items {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .about__items-left {
-  margin: 2rem 4rem 3rem 0;
+  margin: 2rem 2rem 1.5rem 1.5rem;
 }
 
 .about__text {
-  color: #d6d5d5;
   font-size: 1.8rem;
   margin-top: 5.5rem;
 }
@@ -35,8 +34,7 @@
 
 .about__p--link {
   color: #fff;
-  font-style: italic;
-  font-weight: 700;
+  text-decoration: underline;
 }
 
 .about__p--link:hover {
@@ -104,7 +102,7 @@
 .bar span {
   height: 4px;
   float: left;
-  background: #939393;
+  background: var(--secondary-color);
 }
 
 .html {
@@ -280,5 +278,26 @@
 @keyframes dutch {
   0% {
     width: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .about__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__items-right {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__soft-skills {
+    padding: 0;
+  }
+
+  .about__tech-skills li,
+  .about__soft-skills li {
+    width: 35rem;
   }
 }
