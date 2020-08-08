@@ -6,17 +6,7 @@
    left: 0;
    z-index: 10;
    align-items: center;
-}
-
-.header__top:before {
-   content: "";
    background-color: var(--primary-bg-dark);
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
 }
 
 .header__top-menu {
@@ -48,10 +38,11 @@
 
 .header__link:hover {
    color: #fff;
-   transition: all 0.5s;
-   font-size: 2.2rem;
+   transition: 0.3s;
+   font-size: 2rem;
 }
 
+/* header content  */
 .header__content {
    background: var(--primary-bg-dark);
 }
@@ -60,12 +51,12 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin: 0 auto;
    color: var(--primary-color);
 }
 
 .content__items-text {
    margin-top: 10rem;
+   font-size: 2rem;
 }
 
 .content__items-text h2 {
@@ -75,21 +66,10 @@
    font-size: 3.4rem;
 }
 
-.content__items-text span {
-   font-size: 1.8rem;
-}
-
 .content__items-text p {
-   margin-bottom: 3rem;
-   font-size: 2rem;
    border-bottom: 1px solid #444;
    border-top: 1px solid #444;
    padding: 1.5rem 0;
-}
-
-.contact__me {
-   font-size: 1.8rem;
-   padding-bottom: 1rem;
 }
 
 .content__social-inner {
@@ -102,18 +82,9 @@
    padding-bottom: 1.5rem;
 }
 
-.content__social-udemy {
-   width: 90px;
-}
-
-.content__social-udemy:hover {
-   width: 100px;
-   transition: all 0.5s;
-}
-
 .content__social-location {
    padding: 4rem 0 4rem 0;
-   font-size: 1.8rem;
+   font-size: 2rem;
 }
 
 .content__social-location span {
@@ -140,7 +111,7 @@
    height: 4.4rem;
    padding: 0 2rem 0 2rem;
    background-color: #fff;
-   color: #252525;
+   color: var(--primary-bg-dark);
    position: relative;
    font-size: 1.8rem;
 }
@@ -149,6 +120,7 @@
    margin-top: 7rem;
 }
 
+/* responsive style for header  */
 @media (max-width: 1200px) {
    .header__content-inner {
       margin-left: 4rem;

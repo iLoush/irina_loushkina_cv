@@ -1,6 +1,7 @@
 /* section about me */
 .about {
   background: var(--primary-bg-light);
+  font-size: 1.8rem;
 }
 
 .about__title {
@@ -19,7 +20,6 @@
 }
 
 .about__text {
-  font-size: 1.8rem;
   margin-top: 5.5rem;
   padding-right: 2rem;
 }
@@ -37,10 +37,6 @@
   margin: 3rem 0;
   letter-spacing: 0.8;
   line-height: 1.6;
-}
-
-.about__text p strong {
-  color: #fff;
 }
 
 .about__p--link {
@@ -65,7 +61,7 @@
 }
 
 .about__download span {
-  color: #252525;
+  color: var(--primary-bg-dark);
   font-size: 1.8rem;
 }
 
@@ -97,7 +93,6 @@
   width: 45rem;
   margin: 2rem auto;
   color: #fff;
-  font-size: 1.8rem;
 }
 
 .bar {
@@ -206,6 +201,7 @@
   font-weight: 600;
 }
 
+/* responsive style  */
 @keyframes html {
   0% {
     width: 0;
