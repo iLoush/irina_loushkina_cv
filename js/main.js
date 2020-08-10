@@ -30,10 +30,10 @@ window.addEventListener('DOMContentLoaded', () => {
    const readMore = document.querySelector('.show');
 
    function showText() {
-      if (text.style.display === 'none') {
-         text.style.display = "block";
-      } else {
+      if (text.style.display === 'block') {
          text.style.display = "none";
+      } else {
+         text.style.display = "block";
       }
    }
    readMore.addEventListener('click', showText);
