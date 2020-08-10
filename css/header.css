@@ -1,45 +1,58 @@
-.header__top {
-   height: 6rem;
-   width: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 10;
+nav {
+   display: flex;
+   justify-content: space-around;
    align-items: center;
    background-color: var(--primary-bg-dark);
+   height: 8vh;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1;
 }
 
-.header__top-menu {
-   position: relative;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   text-align: center;
-   height: 6rem;
-}
-
-.header__list {
-   display: flex;
-   position: relative;
-   z-index: 2;
-   max-width: 100%;
-}
-
-.header__list li {
-   margin-left: 2rem;
-}
-
-.header__link {
+.logo {
    color: var(--secondary-color);
-   font-size: 1.8rem;
-   text-decoration: none;
-   text-transform: uppercase;
+   font-size: 2rem;
 }
 
-.header__link:hover {
+.nav-links {
+   display: flex;
+   width: 40%;
+   justify-content: space-around;
+}
+
+.nav-links a {
+   list-style: none;
+   color: var(--secondary-color);
+   letter-spacing: 2px;
+   font-size: 1.8rem;
+   transition: all 0.5s;
+}
+
+.nav-links a:hover {
    color: #fff;
-   transition: 0.3s;
-   font-size: 2rem;
+}
+
+.burger {
+   display: none;
+}
+
+.burger div {
+   width: 2.5rem;
+   height: 3px;
+   background-color: var(--secondary-color);
+   margin: 5px;
+   transition: all 0.3s ease;
+}
+
+.toggle .burger__line-1 {
+   transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .burger__line-2 {
+   opacity: 0;
+}
+.toggle .burger__line-3 {
+   transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* header content  */
@@ -51,6 +64,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin: 0 3rem;
    color: var(--primary-color);
 }
 
@@ -120,107 +134,61 @@
    margin-top: 7rem;
 }
 
-/* responsive style for header  */
-@media (max-width: 1200px) {
-   .header__content-inner {
-      margin-left: 4rem;
+@media screen and (max-width: 1024px) {
+   .nav-links {
+      width: 60%;
+   }
+
+   nav {
+      padding-left: 7rem;
    }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
    .content__img {
       display: none;
    }
+
    body.lock {
       overflow: hidden;
    }
 
-   .header__top__menu {
-      height: 50px;
+   nav {
+      justify-content: space-between;
+      padding: 0 3rem 0 6rem;
    }
-
-   .header__burger {
-      position: relative;
-      width: 30px;
-      height: 20px;
-      position: relative;
-      z-index: 3;
-   }
-
-   .header__burger span {
+   .nav-links {
       position: absolute;
-      background-color: #fff;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      top: 9px;
-      transition: all 0.3s ease 0s;
-   }
-
-   .header__burger:before,
-   .header__burger:after {
-      content: "";
-      background-color: #fff;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      left: 0;
-      transition: all 0.3s ease 0s;
-   }
-
-   .header__burger:before {
-      top: 0;
-   }
-
-   .header__burger:after {
-      bottom: 0;
-   }
-
-   .header__burger.active:before {
-      transform: rotate(45deg);
-      top: 9px;
-   }
-
-   .header__burger.active:after {
-      transform: rotate(-45deg);
-      bottom: 9px;
-   }
-
-   .header__burger.active span {
-      display: none;
-   }
-
-   .header__menu {
-      position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
       background-color: var(--primary-bg-dark);
-      padding: 80px 10px 20px 20px;
-      transition: all 0.3s ease 0s;
-      overflow: auto;
-   }
-
-   .header__menu.active {
-      top: 0;
-   }
-
-   .header__list {
       display: flex;
       flex-direction: column;
-      transform: translateY(50%);
+      align-items: center;
+      width: 100%;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: transform 0.5 ease-in;
    }
 
-   .header__list li {
-      margin: 0px 0px 30px 0px;
+   .burger {
+      display: block;
+      cursor: pointer;
    }
 
-   .header__link {
-      font-size: 2rem;
+   .nav-active {
+      transform: translateX(0);
    }
+}
 
-   .header__link:hover {
-      font-size: 2.4rem;
+@keyframes navLinkFade {
+   from {
+      opacity: 0;
+      transform: translateX(50%);
+   }
+   to {
+      overflow: 1;
+      transform: translateX(0%);
    }
 }
